@@ -28,7 +28,7 @@ function main()
         --    http.download(asset.url, path.join("assets", asset.name))
         --end
         os.rm("xmake-build-artifacts")
-        os.exec("git clone git@gitee.com:ivan_allen/xmake-build-artifacts.git")
+        os.exec("git clone git@github.com:ivanallen/xmake-build-artifacts.git")
         os.cd("xmake-build-artifacts")
         local manifestfile = path.join("packages", name:sub(1, 1), name, version, "manifest.txt")
         local manifest = os.isfile(manifestfile) and io.load(manifestfile) or {}
@@ -55,7 +55,7 @@ function main()
                     os.exec("git add -A")
                     os.exec("git commit -a -m \"autoupdate %s-%s by ci\"", name, version)
                     os.exec("git push origin main")
-                    os.exec("git push git@gitee.com:ivan_allen/xmake-build-artifacts.git main")
+                    os.exec("git push git@github.com:ivanallen/xmake-build-artifacts.git main")
                     return true
                 end,
                 catch
