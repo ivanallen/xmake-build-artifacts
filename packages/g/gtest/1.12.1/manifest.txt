@@ -1,0 +1,6 @@
+{
+    ["linux-x86_64-77b9096bc4b34d9282f672d36b015ba9"] = {
+        sha256 = "bcfb3a8a4a4a104f15d95ff71d94d557230dc62b9ed0236fa6e0a0db77a34859",
+        urls = "https://github.com/ivanallen/xmake-build-artifacts/releases/download/gtest-1.12.1/linux-x86_64-77b9096bc4b34d9282f672d36b015ba9.7z"
+    }
+}
